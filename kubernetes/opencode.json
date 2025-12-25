@@ -10,6 +10,17 @@
         "kubernetes-mcp-server@latest",
         "--read-only"
       ]
+    },
+    "k8sgpt": {
+      "enabled": true,
+      "type": "local",
+      "command": [
+        "k8sgpt",
+        "serve",
+        "--mcp",
+        "-b",
+        "ollama"
+      ]
     }
   }
 }
